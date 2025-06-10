@@ -11,4 +11,11 @@ app.use(cors({
     credentials : true
 }))
 
+
+// routes
+
+import userRouter from './routes/user.routes.js'
+
+app.use('/api/v1/user', userRouter)
+
 export {app}
