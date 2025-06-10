@@ -15,7 +15,9 @@ app.use(cors({
 // routes
 
 import userRouter from './routes/user.routes.js'
+import budgetRouter from './routes/budget.routes.js'
 
 app.use('/api/v1/user', userRouter)
+app.use('/api/v1/budget', budgetRouter)
 
 export {app}
